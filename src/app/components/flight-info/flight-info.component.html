@@ -1,0 +1,70 @@
+<p-panel header="Uçuş Bilgileri">
+          <ng-container *ngTemplateOutlet="flightInfo; context:{Flight: Data}"></ng-container>
+  <div class="clearfix"></div>
+</p-panel>
+
+<ng-template #flightInfo let-Flight="Flight">
+  <div *ngFor="let flightInfo of Flight" class="ui-g">
+    <div class="ui-g-12 ui-md-12">
+      <div class="float-left"><label>{{flightInfo.Returning ? 'Gidiş:' : 'Dönüş:'}} {{flightInfo.Departure.Date}}</label></div>
+      <div class="float-right"><i class="pi pi-clock">  {{flightInfo.FlightTime}}</i></div>
+    </div>
+    <p-panel class="ui-g-12 ui-md-12">
+      <p-header class="ui-g-12">
+        <div class="ui-g-12 ui-md-12">
+          <div class="ui-g-12 ui-md-4 p-0">
+            <img class="ui-g-12 p-0" width="70" [src]="flightInfo.Departure.Company.Icon">
+          </div>
+          <div class="ui-g-12 ui-md-6 pt-0">
+            <div class="ui-g-12 ui-md-6 pt-0">
+              <label class="ui-md-12 ui-autocomplete-query">{{flightInfo.Departure.Time}}</label>
+              <label class="ui-md-12">{{flightInfo.Departure.Airport.City}}</label>
+            </div>
+
+
+            <div class="ui-g-12 ui-md-6 pt-0">
+              <label class="ui-md-12 ui-autocomplete-query">{{flightInfo.Landing.Time}}</label>
+              <label class="ui-md-12">{{flightInfo.Landing.Airport.City}}</label>
+            </div>
+            <div class="ui-g-12 ui-md-12 p-0 m-0" *ngIf="flightInfo.Transfer.length > 1">
+              <p class="p-invalid">{{flightInfo.Transfer.length - 1}} Aktarma</p>
+            </div>
+          </div>
+          <div class="ui-g-12 ui-md-2 pt-4">
+            <a class="float-right" href="javascript:;"><i [ngClass]="(flightInfo.Open == true)?'pi pi-chevron-up':'pi pi-chevron-down'" (click)="flightInfo.Open = !flightInfo.Open"></i></a>
+          </div>
+        </div>
+      </p-header>
+      <div *ngIf="flightInfo.Open" class="ui-g">
+        <ng-container *ngTemplateOutlet="flightDetails; context:{Info: flightInfo.Transfer}"></ng-container>
+      </div>
+    </p-panel>
+  </div>
+</ng-template>
+
+<ng-template #flightDetails let-FlightInfo="Info">
+  <div *ngFor="let info of FlightInfo" class="ui-g">
+    <div class="ui-g-12 ui-md-3">
+      <img class="ui-g-12 text-center" width="50" [src]="info.Departure.Company.Icon">
+      <label class="ui-g-12 ui-md-12 text-center">{{info.Departure.Date}}</label>
+      <label class="ui-g-12 ui-md-12 text-center">{{info.FlightTime}}</label>
+    </div>
+    <div class="ui-g-12 ui-md-1"></div>
+    <div class="ui-g-12 ui-md-8">
+      <div class="ui-g-12 ui-md-12">
+        <label>{{info.Departure.Time}} {{info.Departure.Airport.City}} - {{info.Departure.Airport.Name}} ({{info.Departure.Airport.Code}})</label>
+      </div>
+      <div class="ui-g-12 ui-md-12 ui-radiobutton-icon">
+        <label>{{info.Landing.Company.Name}} | {{info.Landing.Company.Code}}</label>
+        <label class="float-right pr-2"><i class="pi pi-briefcase"></i> {{info.Departure.Luggage}}</label>
+        <label class="float-right pr-2"><i class="pi pi-shopping-cart"></i> {{info.Departure.Seat}}</label>
+      </div>
+      <div class="ui-g-12 ui-md-12">
+        <label>{{info.Landing.Time}} {{info.Landing.Airport.City}} - {{info.Landing.Airport.Name}} ({{info.Landing.Airport.Code}})</label>
+      </div>
+    </div>
+    <div class="ui-g-12 ui-md-12" *ngIf="!!info.WaitTime">
+      <p-message severity="info" text="{{info.WaitTime}}"></p-message>
+    </div>
+  </div>
+</ng-template>

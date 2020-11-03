@@ -1,0 +1,476 @@
+[
+  [
+    {
+    "Departure" : {
+      "Date":"25 Kasım 2020",
+      "Time":"15:45",
+      "Airport": {
+        "Name": "Sabiha Gökçen Havalimanı",
+        "County": "Türkiye",
+        "City": "İstanbul",
+        "Code": "SAW"
+      },
+      "Company": {
+        "Name": "Türk Hava Yolları",
+        "Code": "TRY1453",
+        "Icon": "http://www.havayolu101.com/wp-content/uploads/2012/11/THY-Logo.jpg"
+      },
+      "Seat": "F3 Main Cabin",
+      "Luggage": 1
+    },
+    "Landing" : {
+      "Date":"25 Kasım 2020",
+      "Time":"22:30",
+      "Airport": {
+        "Name": "Adana Şakirpaşa Havalimanı",
+        "County": "Türkiye",
+        "City": "Adana",
+        "Code": "ADA"
+      },
+      "Company": {
+        "Name": "Türk Hava Yolları",
+        "Code": "TRY1453",
+        "Icon": "http://www.havayolu101.com/wp-content/uploads/2012/11/THY-Logo.jpg"
+      },
+      "Seat": "F3 Main Cabin",
+      "Luggage": 1
+    },
+    "Transfer": [
+      {
+        "Departure" : {
+          "Date":"25 Kasım 2020",
+          "Time":"15:45",
+          "Airport": {
+            "Name": "Sabiha Gökçen Havalimanı",
+            "County": "Türkiye",
+            "City": "İstanbul",
+            "Code": "SAW"
+          },
+          "Company": {
+            "Name": "Türk Hava Yolları",
+            "Code": "TRY1453",
+            "Icon": "http://www.havayolu101.com/wp-content/uploads/2012/11/THY-Logo.jpg"
+          },
+          "Seat": "F3 Main Cabin",
+          "Luggage": 1
+        },
+        "Landing" : {
+          "Date":"25 Kasım 2020",
+          "Time":"17:45",
+          "Airport": {
+            "Name": "Adana Şakirpaşa Havalimanı",
+            "County": "Türkiye",
+            "City": "Adana",
+            "Code": "ADA"
+          },
+          "Company": {
+            "Name": "Türk Hava Yolları",
+            "Code": "TRY1453",
+            "Icon": "http://www.havayolu101.com/wp-content/uploads/2012/11/THY-Logo.jpg"
+          },
+          "Seat": "F3 Main Cabin",
+          "Luggage": 1
+        },
+        "FlightTime": "2 sa 0 dk",
+        "WaitTime": null
+      }
+    ],
+    "FlightTime": "2 sa 0 dk",
+    "Returning": true,
+    "Open": false
+  },
+    {
+    "Departure" : {
+      "Date":"26 Kasım 2020",
+      "Time":"10:45",
+      "Airport": {
+        "Name": "Adana Şakirpaşa Havalimanı",
+        "County": "Türkiye",
+        "City": "Adana",
+        "Code": "ADA"
+      },
+      "Company": {
+        "Name": "Pegasus",
+        "Code": "TRY1598",
+        "Icon": "https://cdnp.flypgs.com/files/GorselArsiv/Pegasus_Airlines.jpg"
+      },
+      "Seat": "F3 Main Cabin",
+      "Luggage": 1
+    },
+    "Landing" : {
+      "Date":"26 Kasım 2020",
+      "Time":"20:30",
+      "Airport": {
+        "Name": "Sabiha Gökçen Havalimanı",
+        "County": "Türkiye",
+        "City": "İstanbul",
+        "Code": "SAW"
+      },
+      "Company": {
+        "Name": "Türk Hava Yolları",
+        "Code": "TRY1453",
+        "Icon": "http://www.havayolu101.com/wp-content/uploads/2012/11/THY-Logo.jpg"
+      },
+      "Seat": "F3 Main Cabin",
+      "Luggage": 1
+    },
+    "Transfer": [
+      {
+        "Departure" : {
+          "Date":"26 Kasım 2020",
+          "Time":"10:45",
+          "Airport": {
+            "Name": "Adana Şakirpaşa Havalimanı",
+            "County": "Türkiye",
+            "City": "Adana",
+            "Code": "ADA"
+          },
+          "Company": {
+            "Name": "Pegasus",
+            "Code": "TRY1598",
+            "Icon": "https://cdnp.flypgs.com/files/GorselArsiv/Pegasus_Airlines.jpg"
+          },
+          "Seat": "F3 Main Cabin",
+          "Luggage": 1
+        },
+        "Landing" : {
+          "Date":"26 Kasım 2020",
+          "Time":"12:45",
+          "Airport": {
+            "Name": "Esenboğa Havalimanı",
+            "County": "Türkiye",
+            "City": "Ankara",
+            "Code": "ESB"
+          },
+          "Company": {
+            "Name": "Pegasus",
+            "Code": "TRY1598",
+            "Icon": "https://cdnp.flypgs.com/files/GorselArsiv/Pegasus_Airlines.jpg"
+          },
+          "Seat": "F3 Main Cabin",
+          "Luggage": 1
+        },
+        "FlightTime": "2 sa 0 dk",
+        "WaitTime": "3 sa 30 dk"
+      },
+      {
+        "Departure" : {
+          "Date":"26 Kasım 2020",
+          "Time":"15:15",
+          "Airport": {
+            "Name": "Esenboğa Havalimanı",
+            "County": "Türkiye",
+            "City": "Ankara",
+            "Code": "ESB"
+          },
+          "Company": {
+            "Name": "Pegasus",
+            "Code": "TRY1598",
+            "Icon": "https://cdnp.flypgs.com/files/GorselArsiv/Pegasus_Airlines.jpg"
+          },
+          "Seat": "F3 Main Cabin",
+          "Luggage": 1
+        },
+        "Landing" : {
+          "Date":"26 Kasım 2020",
+          "Time":"17:15",
+          "Airport": {
+            "Name": "Elazığ Havalimanı",
+            "County": "Türkiye",
+            "City": "Elazığ",
+            "Code": "EZS"
+          },
+          "Company": {
+            "Name": "Pegasus",
+            "Code": "TRY1598",
+            "Icon": "https://cdnp.flypgs.com/files/GorselArsiv/Pegasus_Airlines.jpg"
+          },
+          "Seat": "F3 Main Cabin",
+          "Luggage": 1
+        },
+        "FlightTime": "2 sa 0 dk",
+        "WaitTime": "1 sa 15 dk"
+      },
+      {
+        "Departure" : {
+          "Date":"26 Kasım 2020",
+          "Time":"18:30",
+          "Airport": {
+            "Name": "Elazığ Havalimanı",
+            "County": "Türkiye",
+            "City": "Elazığ",
+            "Code": "EZS"
+          },
+          "Company": {
+            "Name": "Türk Hava Yolları",
+            "Code": "TRY1453",
+            "Icon": "http://www.havayolu101.com/wp-content/uploads/2012/11/THY-Logo.jpg"
+          },
+          "Seat": "F3 Main Cabin",
+          "Luggage": 1
+        },
+        "Landing" : {
+          "Date":"26 Kasım 2020",
+          "Time":"20:30",
+          "Airport": {
+            "Name": "Sabiha Gökçen Havalimanı",
+            "County": "Türkiye",
+            "City": "İstanbul",
+            "Code": "SAW"
+          },
+          "Company": {
+            "Name": "Türk Hava Yolları",
+            "Code": "TRY1453",
+            "Icon": "http://www.havayolu101.com/wp-content/uploads/2012/11/THY-Logo.jpg"
+          },
+          "Seat": "F3 Main Cabin",
+          "Luggage": 1
+        },
+        "FlightTime": "2 sa 0 dk",
+        "WaitTime": null
+      }
+    ],
+    "FlightTime": "9 sa 45 dk",
+    "Returning": false,
+    "Open": false
+  }
+  ],
+  [
+    {
+    "Departure" : {
+      "Date":"25 Kasım 2020",
+      "Time":"15:45",
+      "Airport": {
+        "Name": "Sabiha Gökçen Havalimanı",
+        "County": "Türkiye",
+        "City": "İstanbul",
+        "Code": "SAW"
+      },
+      "Company": {
+        "Name": "Türk Hava Yolları",
+        "Code": "TRY1453",
+        "Icon": "http://www.havayolu101.com/wp-content/uploads/2012/11/THY-Logo.jpg"
+      },
+      "Seat": "F3 Main Cabin",
+      "Luggage": 1
+    },
+    "Landing" : {
+      "Date":"25 Kasım 2020",
+      "Time":"22:30",
+      "Airport": {
+        "Name": "Adana Şakirpaşa Havalimanı",
+        "County": "Türkiye",
+        "City": "Adana",
+        "Code": "ADA"
+      },
+      "Company": {
+        "Name": "Türk Hava Yolları",
+        "Code": "TRY1453",
+        "Icon": "http://www.havayolu101.com/wp-content/uploads/2012/11/THY-Logo.jpg"
+      },
+      "Seat": "F3 Main Cabin",
+      "Luggage": 1
+    },
+    "Transfer": [
+      {
+        "Departure" : {
+          "Date":"25 Kasım 2020",
+          "Time":"15:45",
+          "Airport": {
+            "Name": "Sabiha Gökçen Havalimanı",
+            "County": "Türkiye",
+            "City": "İstanbul",
+            "Code": "SAW"
+          },
+          "Company": {
+            "Name": "Türk Hava Yolları",
+            "Code": "TRY1453",
+            "Icon": "http://www.havayolu101.com/wp-content/uploads/2012/11/THY-Logo.jpg"
+          },
+          "Seat": "F3 Main Cabin",
+          "Luggage": 1
+        },
+        "Landing" : {
+          "Date":"25 Kasım 2020",
+          "Time":"17:45",
+          "Airport": {
+            "Name": "Adana Şakirpaşa Havalimanı",
+            "County": "Türkiye",
+            "City": "Adana",
+            "Code": "ADA"
+          },
+          "Company": {
+            "Name": "Türk Hava Yolları",
+            "Code": "TRY1453",
+            "Icon": "http://www.havayolu101.com/wp-content/uploads/2012/11/THY-Logo.jpg"
+          },
+          "Seat": "F3 Main Cabin",
+          "Luggage": 1
+        },
+        "FlightTime": "2 sa 0 dk",
+        "WaitTime": null
+      }
+    ],
+    "FlightTime": "2 sa 0 dk",
+    "Returning": true,
+    "Open": false
+  }
+  ],
+  [
+    {
+      "Departure" : {
+        "Date":"26 Kasım 2020",
+        "Time":"10:45",
+        "Airport": {
+          "Name": "Adana Şakirpaşa Havalimanı",
+          "County": "Türkiye",
+          "City": "Adana",
+          "Code": "ADA"
+        },
+        "Company": {
+          "Name": "Pegasus",
+          "Code": "TRY1598",
+          "Icon": "https://cdnp.flypgs.com/files/GorselArsiv/Pegasus_Airlines.jpg"
+        },
+        "Seat": "F3 Main Cabin",
+        "Luggage": 1
+      },
+      "Landing" : {
+        "Date":"26 Kasım 2020",
+        "Time":"20:30",
+        "Airport": {
+          "Name": "Sabiha Gökçen Havalimanı",
+          "County": "Türkiye",
+          "City": "İstanbul",
+          "Code": "SAW"
+        },
+        "Company": {
+          "Name": "Türk Hava Yolları",
+          "Code": "TRY1453",
+          "Icon": "http://www.havayolu101.com/wp-content/uploads/2012/11/THY-Logo.jpg"
+        },
+        "Seat": "F3 Main Cabin",
+        "Luggage": 1
+      },
+      "Transfer": [
+        {
+          "Departure" : {
+            "Date":"26 Kasım 2020",
+            "Time":"10:45",
+            "Airport": {
+              "Name": "Adana Şakirpaşa Havalimanı",
+              "County": "Türkiye",
+              "City": "Adana",
+              "Code": "ADA"
+            },
+            "Company": {
+              "Name": "Pegasus",
+              "Code": "TRY1598",
+              "Icon": "https://cdnp.flypgs.com/files/GorselArsiv/Pegasus_Airlines.jpg"
+            },
+            "Seat": "F3 Main Cabin",
+            "Luggage": 1
+          },
+          "Landing" : {
+            "Date":"26 Kasım 2020",
+            "Time":"12:45",
+            "Airport": {
+              "Name": "Esenboğa Havalimanı",
+              "County": "Türkiye",
+              "City": "Ankara",
+              "Code": "ESB"
+            },
+            "Company": {
+              "Name": "Pegasus",
+              "Code": "TRY1598",
+              "Icon": "https://cdnp.flypgs.com/files/GorselArsiv/Pegasus_Airlines.jpg"
+            },
+            "Seat": "F3 Main Cabin",
+            "Luggage": 1
+          },
+          "FlightTime": "2 sa 0 dk",
+          "WaitTime": "3 sa 30 dk"
+        },
+        {
+          "Departure" : {
+            "Date":"26 Kasım 2020",
+            "Time":"15:15",
+            "Airport": {
+              "Name": "Esenboğa Havalimanı",
+              "County": "Türkiye",
+              "City": "Ankara",
+              "Code": "ESB"
+            },
+            "Company": {
+              "Name": "Pegasus",
+              "Code": "TRY1598",
+              "Icon": "https://cdnp.flypgs.com/files/GorselArsiv/Pegasus_Airlines.jpg"
+            },
+            "Seat": "F3 Main Cabin",
+            "Luggage": 1
+          },
+          "Landing" : {
+            "Date":"26 Kasım 2020",
+            "Time":"17:15",
+            "Airport": {
+              "Name": "Elazığ Havalimanı",
+              "County": "Türkiye",
+              "City": "Elazığ",
+              "Code": "EZS"
+            },
+            "Company": {
+              "Name": "Pegasus",
+              "Code": "TRY1598",
+              "Icon": "https://cdnp.flypgs.com/files/GorselArsiv/Pegasus_Airlines.jpg"
+            },
+            "Seat": "F3 Main Cabin",
+            "Luggage": 1
+          },
+          "FlightTime": "2 sa 0 dk",
+          "WaitTime": "1 sa 15 dk"
+        },
+        {
+          "Departure" : {
+            "Date":"26 Kasım 2020",
+            "Time":"18:30",
+            "Airport": {
+              "Name": "Elazığ Havalimanı",
+              "County": "Türkiye",
+              "City": "Elazığ",
+              "Code": "EZS"
+            },
+            "Company": {
+              "Name": "Türk Hava Yolları",
+              "Code": "TRY1453",
+              "Icon": "http://www.havayolu101.com/wp-content/uploads/2012/11/THY-Logo.jpg"
+            },
+            "Seat": "F3 Main Cabin",
+            "Luggage": 1
+          },
+          "Landing" : {
+            "Date":"26 Kasım 2020",
+            "Time":"20:30",
+            "Airport": {
+              "Name": "Sabiha Gökçen Havalimanı",
+              "County": "Türkiye",
+              "City": "İstanbul",
+              "Code": "SAW"
+            },
+            "Company": {
+              "Name": "Türk Hava Yolları",
+              "Code": "TRY1453",
+              "Icon": "http://www.havayolu101.com/wp-content/uploads/2012/11/THY-Logo.jpg"
+            },
+            "Seat": "F3 Main Cabin",
+            "Luggage": 1
+          },
+          "FlightTime": "2 sa 0 dk",
+          "WaitTime": null
+        }
+      ],
+      "FlightTime": "9 sa 45 dk",
+      "Returning": true,
+      "Open": false
+    }
+  ]
+]

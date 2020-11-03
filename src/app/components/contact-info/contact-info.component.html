@@ -1,0 +1,25 @@
+<p-panel header="İletişim Bilgileri">
+
+  <div class="ui-g-12 ui-md-12">
+  <div class="ui-md-12">
+    <label>E-Posta Adresi</label>
+  </div>
+  <div class="ui-g-12">
+    <input pInputText placeholder="E-Posta Adresi Giriniz" type="email" class="p-inputtext-sm p-inputgroup">
+  </div>
+
+  </div>
+
+  <div class="ui-g-12 ui-md-12">
+    <div class="ui-md-12">
+      <label>Telefon Numarası</label>
+    </div>
+      <div class="ui-g-12 ui-md-4">
+        <p-dropdown [style]="{width: '100%'}"  [options]="phoneAreaList" class="p-inputtext-sm"></p-dropdown>
+      </div>
+      <div class="ui-g-12 ui-md-8">
+        <p-inputMask mask="(999) 999-9999" placeholder="Telefon Numarası" class="p-inputtext-sm p-inputgroup"></p-inputMask>
+      </div>
+  </div>
+  <div class="clearfix"></div>
+</p-panel>

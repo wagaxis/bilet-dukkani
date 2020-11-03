@@ -1,0 +1,83 @@
+<form *ngIf="passengerForm" novalidate [formGroup]="passengerForm" (submit)="Save()">
+  <p-panel header="Yolcu Bilgileri">
+    <div class="ui-g-12 ui-md-12 p-0">
+     <div class="ui-g-12 ui-md-1">
+       <label>Yetişkin</label>
+        <p-radioButton label="Bay" value="0"  [(ngModel)]="selectedGender" formControlName="Gender"></p-radioButton>
+        <p-radioButton label="Bayan" value="1" [(ngModel)]="selectedGender" formControlName="Gender"></p-radioButton>
+        <small *ngIf="validate('Gender') && passengerForm.controls['Gender'].errors?.required" class="p-invalid">Cinsiyetinizi seçiniz.</small>
+     </div>
+     <div class="ui-g-12 ui-md-11 pt-4">
+       <div class="ui-g-12 ui-md-4">
+         <input pInputText placeholder="Yolcu Adı" formControlName="Name" class="p-inputtext-sm p-inputgroup">
+         <small *ngIf="validate('Name') && passengerForm.controls['Name'].errors?.required" class="p-invalid">Adınızı giriniz.</small>
+       </div>
+       <div class="ui-g-12 ui-md-4">
+         <input pInputText placeholder="Yolcu Soyadı" formControlName="Surname" class="p-inputtext-sm p-inputgroup">
+         <small *ngIf="validate('Surname') && passengerForm.controls['Surname'].errors?.required" class="p-invalid">Soydınızı giriniz.</small>
+       </div>
+       <div class="ui-g-12 ui-md-4">
+         <p-calendar [style]="{width: '100%'}" class="p-inputtext-sm" [showIcon]="true" placeholder="Doğum Tarihi" formControlName="BirthDate" dateFormat="dd.mm.yy"></p-calendar>
+         <small *ngIf="validate('BirthDate') && passengerForm.controls['BirthDate'].errors?.required" class="p-invalid">Doğum tarihinizi giriniz.</small>
+       </div>
+     </div>
+   </div>
+
+    <div class="ui-g-12 ui-md-12 p-0">
+     <div class="ui-g-12 ui-md-4">
+       <div class="p-inputgroup">
+         <span class="p-inputgroup-addon"><p-checkbox [(ngModel)]="disabled" binary="true" formControlName="HasTc"></p-checkbox></span>
+         <input pInputText pKeyFilter="int" placeholder="TC Kimlik Numarası" [disabled]="disabled" formControlName="TCNo" class="p-inputtext-sm p-inputgroup" maxlength="11" minlength="11">
+       </div>
+       <small *ngIf="validate('TCNo') && passengerForm.controls['TCNo'].errors?.required" class="p-invalid">TC numaranızı giriniz.</small>
+       <small *ngIf="validate('TCNo') && passengerForm.controls['TCNo'].errors?.minLength" class="p-invalid">TC numaranız 11 karakter olmalıdır.</small>
+     </div>
+     <div class="ui-g-12 ui-md-1">
+       <p-dropdown [style]="{width: '100%'}" [options]="phoneAreaList" formControlName="PhoneArea" class="p-inputtext-sm"></p-dropdown>
+     </div>
+     <div class="ui-g-12 ui-md-3">
+       <p-inputMask mask="(999) 999-9999" formControlName="Phone" placeholder="Telefon Numarası" class="p-inputtext-sm p-inputgroup"></p-inputMask>
+       <small *ngIf="validate('Phone') && passengerForm.controls['Phone'].errors?.required" class="p-invalid">Telefon numarasınızı giriniz.</small>
+     </div>
+     <div class="ui-g-12 ui-md-4">
+       <input pInputText placeholder="E-Posta Adresi" type="email" formControlName="Email" class="p-inputtext-sm p-inputgroup">
+       <small *ngIf="validate('Email') && passengerForm.controls['Email'].errors?.required" class="p-invalid">E-posta adresinizi giriniz.</small>
+       <small *ngIf="validate('Email') && passengerForm.controls['Email'].errors?.email" class="p-invalid">E-posta formatına uyunuz.</small>
+     </div>
+   </div>
+
+    <div class="ui-g-12 ui-md-12 p-0">
+      <div class="ui-g-12 ui-md-4">
+        <input pInputText placeholder="Pasaport Numarası" formControlName="PassportNumber" class="p-inputtext-sm p-inputgroup">
+        <small *ngIf="validate('PassportNumber') && passengerForm.controls['PassportNumber'].errors?.required" class="p-invalid">Pasaport numarasınızı giriniz.</small>
+      </div>
+      <div class="ui-g-12 ui-md-4">
+        <p-dropdown [style]="{width: '100%'}" [options]="countyList" formControlName="Country" class="p-inputtext-sm p-inputgroup"></p-dropdown>
+        <small *ngIf="validate('Country') && passengerForm.controls['Country'].errors?.required" class="p-invalid">Ülkenizi seçiniz.</small>
+      </div>
+      <div class="ui-g-12 ui-md-4">
+        <p-calendar [style]="{width: '100%'}" class="p-inputtext-sm" [showIcon]="true" placeholder="Pasaport Bitiş Tarihi" formControlName="PassportEndDate" dateFormat="dd.mm.yy" class="p-inputtext-sm p-inputgroup"></p-calendar>
+        <small *ngIf="validate('PassportEndDate') && passengerForm.controls['PassportEndDate'].errors?.required" class="p-invalid">Pasaport bitiş tarihininizi giriniz.</small>
+      </div>
+   </div>
+
+    <div class="ui-g-12 ui-md-12 p-0">
+      <div class="ui-g-12 ui-md-4">
+        <input pInputText placeholder="Mil Kodu" formControlName="MilCode" class="p-inputtext-sm p-inputgroup">
+        <small *ngIf="validate('MilCode') && passengerForm.controls['MilCode'].errors?.required" class="p-invalid">Mil kodunuzu giriniz.</small>
+      </div>
+      <div class="ui-g-12 ui-md-4">
+        <input pInputText placeholder="HES Kodu" formControlName="HESCode" class="p-inputtext-sm p-inputgroup">
+        <small *ngIf="validate('HESCode') && passengerForm.controls['HESCode'].errors?.required" class="p-invalid">HES kodunuzu giriniz.</small>
+      </div>
+    </div>
+
+    <div class="ui-g-12 ui-md-12 p-0">
+      <p-button class="float-right p-2" icon="pi pi-search" label="Müşteri Bankasından Getir"></p-button>
+      <p-button class="float-right p-2" icon="pi pi-save" label="Müşteri Bankasına Kaydet" styleClass="p-button-success"  (click)="Save()"></p-button>
+    </div>
+    <div class="clearfix"></div>
+  </p-panel>
+</form>
+<p-toast></p-toast>
+
